@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    background-color: aqua;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    position: absolute;
+    display: inline-block;
+  }
+
+  .image-content { 
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .image-content img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .image-text {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding-left: 10px;
+  }
+  
+  .image-container:hover .image-content {
+    transform: scale(2);
+  }
+
+  .image-container:hover{
+    animation-play-state: paused;
+  }
+  
+  .image-container:hover .image-text {
+    display: flex;
+  }
+
+  /* specific animation for all individual symbols */
+
+  #Tech-sym{
+    top: 18%;
+    left: 100%;
+    animation: frames-tech 13s linear infinite;
+  }
+
+  #PR-sym{
+    top: 1%;
+    left: 111%;
+    animation: frames-pr 15s linear infinite;
+  }
+  
+#Design-sym{
+    top: -11%;
+    left: 98%;
+    animation: frames-design 14s linear infinite;
+
+}
+ 
+#Editorial-sym{
+    top: -14%;
+    left: 89%;
+    animation: frames-editorial 10s linear infinite;
+
+}
+
+#Photography-sym{
+    top: 28%;
+    left: 101%;
+    animation: frames-photography 12.5s linear infinite;
+
+}
+
+  @keyframes frames-tech {
+    0%, 100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    5%, 25%, 50%, 75%, 95% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-60vh, 40vh);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes frames-pr {
+    0%, 100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    5%, 25%, 50%, 75%, 95% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-60vh, 40vh);
+      opacity: 0;
+    }
+  }
+
+  @keyframes frames-design {
+    0%, 100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    5%, 25%, 50%, 75%, 95% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-60vh, 40vh);
+      opacity: 0;
+    }
+  }
+
+  @keyframes frames-editorial {
+    0%, 100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    5%, 25%, 50%, 75%, 95% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-60vh, 40vh);
+      opacity: 0;
+    }
+  }
+
+  @keyframes frames-photography {
+    0%, 100% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    5%, 25%, 50%, 75%, 95% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-60vh, 40vh);
+      opacity: 0;
+    }
+  }
+
+#Tech-sym:hover{
+    animation-play-state: paused;
+}
+#PR-sym:hover{
+    animation-play-state: paused;
+}
+#Design-sym:hover{
+    animation-play-state: paused;
+}
+#Editorial-sym:hover{
+    animation-play-state: paused;
+}
+#Photography-sym:hover{
+    animation-play-state: paused;
+}
